@@ -1,0 +1,1 @@
+print(type(fast_money))
