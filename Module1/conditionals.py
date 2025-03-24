@@ -22,6 +22,6 @@ if boss==True:
 
     else:
         print("bolwing") 
-        if coin =='head'or boss!=false
+        if coin =='head'or boss!=False
             print("not ok")   
 
