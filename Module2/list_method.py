@@ -9,4 +9,7 @@ if 10 in number:
 if 5 in number:
     number.insert(0)
     print(number)
+last =number.pop()
+print('last num',number)
+ 
     
