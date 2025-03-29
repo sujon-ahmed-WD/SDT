@@ -12,3 +12,4 @@ name=famous_name(first='s' , last='u', mid='j',end='on')
 print(name)
 # *args -> holo ata kaj sodu man golo return 
 # **kargs-> akna key and value akra kaj korva 
+

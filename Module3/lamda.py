@@ -12,7 +12,7 @@ actors=[
     {'name':'s','age':65},
     {'name':'j','age':30},
     {'name':'u','age':45},
-    {'name':'o','age':38},gi
+    {'name':'o','age':38},
 ]
 jounor=filter(lambda actor:actor['age']<40,actors)
 print(list(jounor))
