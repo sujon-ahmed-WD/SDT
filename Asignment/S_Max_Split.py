@@ -18,14 +18,4 @@ for i in val:
  
 print(len(balanced_substrings))   
 for sub in balanced_substrings:
-    print(sub)  #  
-
-# val=input()
-# l=0
-# r=0
-# for i in val:
-#     if i=='L':
-#         l+=1
-#     if i=='R':
-#      r-=1
-# print(l,r) 
+    print(sub)  
