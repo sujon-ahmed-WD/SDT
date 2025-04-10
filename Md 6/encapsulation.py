@@ -10,7 +10,7 @@ class Bank:
     def get_balance(self):
             return self.__balance
     
-    def withdraw(self,amount): # encupcutaion 
+    def withdraw(self,amount): # encupcutaion  kaj golo ata 
         if amount<self.__balance :
             self.__balance=self.__balance-amount
             return amount
@@ -24,4 +24,5 @@ rafsan=Bank('choto',10000)
 print(rafsan.holder_name)
 rafsan.depsit(40000)
 rafsan.withdraw(500)
+print(rafsan.get_balance)
 print(rafsan.get_balance())

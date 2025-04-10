@@ -10,7 +10,6 @@ class Gadget:
     def run(self):
         return f'Running Laptop: {self.brand}'
     
-    
 class Laptop:
      def __init__(self,memory,ssd)->None:
     
