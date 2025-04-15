@@ -1,0 +1,41 @@
+# static attribute (class attribute)
+# static method @staticmethod
+# class method @classmethod
+# differences between static method and class method
+
+class Shopping:
+    cart = [] #class attribute #static attribute
+    origin = 'china'
+    
+    def __init__(self, name, location) -> None:
+        self.name = name  # instance attribute
+        self.location = location
+    
+    def purchase(self, item, price, amount):
+        remaining = amount - price
+        print(f'buying: {self.name} for price: {price} and remaining: {remaining}')
+
+    @staticmethod
+    def multiply(a, b):
+        result = a*b
+        print(result)
+
+    @classmethod
+    def hudai_dekhi(self, item):
+        print(self.origin)
+        print('hudai dekhi kintu kinmu just ac er hawa khaite aschi', item)
+
+
+# basundara = Shopping('basu en dhara', 'not popular location')
+# basundara2 = Shopping('basu en dhara2', 'not popular location2')
+# basundara.purchase('lungi', 500, 1000)
+# basundara.hudai_dekhi('lungi')
+# basundara2.hudai_dekhi('lungi2')
+# Shopping.purchase(2, 3, 3)
+Shopping.hudai_dekhi('Lran')
+
+
+#static method
+# Shopping.purchase('ssjj','ss',4,6) 
+
+# basundara.multiply(6,9)
