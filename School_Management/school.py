@@ -10,7 +10,8 @@ class School:
     def add_teacher(self, subject, teacher):
         self.teachers[subject] =  teacher
     def student_admission(self, student):
-        pass
+         classname=student.classroom.name
+         self.classrooms[classname].add_student(student)
     
     # rahim - bang - 50 - B - 2.00
     #       - eng  - 80 - A+ - 5.00
@@ -61,7 +62,25 @@ class School:
         else:
             return 'F'
     
-  
+    def __repr__(self):
+        # All Classroom
+        for key in self.classrooms.keys():
+            print(key)
+        # All Student
+        print("All Student")
+        result=' '
+        for key,value in self.classrooms.items():      # prottketa  calssroom e galtm
+            
+            result+=f"----------     {key.upper()}  classroom Students\n--------" #  Student name dakhba .... 
+            for student in value.student:
+                result+=f"{student.name}\n"
+                
+        print(result)
+        
+        # All Sujbect
+        
+        subject =''
+        for key,value in self.classrooms.items
     
  
  
