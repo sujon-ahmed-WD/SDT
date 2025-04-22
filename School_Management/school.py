@@ -78,10 +78,34 @@ class School:
         print(result)
         
         # All Sujbect
-        
+        print("ALL subject")
         subject =''
-        for key,value in self.classrooms.items
-    
+        for key,value in self.classrooms.items(): # protekka classrooma e galam
+            
+            subject+=f"{key.upper()} classroom subject\n"
+            for  sub in value.subject:
+                subject+=f"{sub.name}\n"           
+        print(subject)    
+        
+        # All Teacher 
+        for key in self.teachers.keys():
+            print(key)
+         
+        # All Student
+        print("student result")
+        
+        for key,value in self.classrooms.items():
+            for student in value.student:
+                 for k,i in student.marks.items():
+                     print(student.name,k,i,student.subject_grade[k])
+        
+        
+        
+        
+        
+        
+        
+        
  
  
     
