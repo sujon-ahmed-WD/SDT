@@ -1,5 +1,3 @@
-class Restrurant_Owener:
-    orderlist=[]
-    
-    def add_orders(self,order):
-        self.orderlist.append(order)
+y_order=Order()
+# y_order.add_item(drink)
+# print(owner.orderlist)
