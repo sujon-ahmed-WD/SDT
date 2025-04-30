@@ -1,0 +1,52 @@
+USE Constrant;
+
+CREATE TABLE Student
+(
+	 Roll CHAR(4) PRIMARY KEY,
+    Name VARCHAR(50) NOT NULL,
+    Email VARCHAR(60) UNIQUE,
+    Address VARCHAR(255),
+    Age INT
+    CONSTRAINT checking_rule CHECK(Age>10)
+);
+ 
+INSERT INTO Student(Roll,Name,Email,Address,Age) VALUES('0001','sujon','sujon@gmail.com','DHAKA',11);
+INSERT INTO Student(Roll,Name,Email,Address,Age) VALUES('0004','shmed','shmed@gmail.com',11);
+
+CREATE TABLE Student
+(
+	Roll CHAR(4)  ,
+    Name VARCHAR(50) NOT NULL,
+    Email VARCHAR(60)  ,
+    Address VARCHAR(255),
+    Age INT,
+    PRIMARY KEY(Roll),
+    UNIQUE(Email),
+    CHECK(Age>10)
+);
+
+
+ 
+CREATE TABLE Library
+(
+		BookName VARCHAR(50) PRIMARY KEY,
+        WhoHirerd_Roll CHAR(4),
+        FOREIGN KEY (   WhoHirerd_Roll) REFERENCES Student(Roll)
+        
+);
+
+CREATE TABLE Course
+(
+	CourseName VARCHAR (10),
+    University VARCHAR (10),
+    Credit INT,
+    
+    PRIMARY KEY(CourseName,University)
+);
+
+SELECT *from Library;
+
+
+-- SELECT 1)ke dakbo FROM kotha thak dakbo  2)SELECT * FROM CourseName
+
+
